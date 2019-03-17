@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:drawable/dialog_holo_light_frame"
+    android:orientation="vertical"
+    android:padding="10sp">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        tools:srcCompat="@tools:sample/avatars[0]" />
+
+    <TextView
+        android:id="@+id/nazivRobe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3sp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tipRobe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3sp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tezinaRobe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3sp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/kolicinaRobe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3sp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/napomenaRobe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3sp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/labelaKolicina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Količina"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/izmjenaKolicina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Unesite količinu koja je veća od 0"
+        android:inputType="number"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/labelaNapomena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Napomena"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/izmjenaNapomena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/sacuvajIzmjene"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sačuvaj"
+        android:textColor="@android:color/black"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/otkaziIzmjene"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Otkaži"
+        android:textColor="@android:color/black"
+        android:visibility="gone" />
+
+</LinearLayout>

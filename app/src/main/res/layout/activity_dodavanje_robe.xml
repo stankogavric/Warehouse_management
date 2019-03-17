@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10sp"
+    tools:context=".DodavanjeRobeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Dodavanje robe"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/unesiNazivRobe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:ems="10"
+                android:hint="Naziv"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Skladište"
+                android:inputType="textPersonName" />
+
+            <Spinner
+                android:id="@+id/unesiSkladiste"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:contentDescription="Skladište" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Tip robe"
+                android:inputType="textPersonName" />
+
+            <Spinner
+                android:id="@+id/unesiTipRobe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:contentDescription="Tip" />
+
+            <EditText
+                android:id="@+id/unesiTezinuRobe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:ems="10"
+                android:hint="Težina"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/unesiKolicinuRobe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:ems="10"
+                android:hint="Količina"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/unesiNapomenuRobe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Napomena"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/unesiDodajRobu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                android:text="Dodaj"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/dodavanjeGreska"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_red_dark" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
